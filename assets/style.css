@@ -1,0 +1,75 @@
+/* :default css  */
+
+
+.btn-outline-secondary:hover {
+  color: #fff;
+  background-color: #12cbc4;
+  border-color: #12cbc4;
+}
+/* btn  */
+.btn-outline-success {
+  font-weight: bold !important;
+  background-color: #ef5544;
+  color: #fff;
+}
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #da5849fd;
+  border-color: none;
+}
+table,
+th,
+td {
+  border: 1px solid black !important;
+}
+
+#show-more-button {
+  display: none;
+}
+#showMore{
+    background-color: #12CBC4;
+
+}
+#main-section {
+  min-height: 70vh;
+}
+
+/* footer section  */
+.footer-bg {
+  background-color: #12cbc4;
+}
+/* spinner  */
+#cover-spin {
+    display:none;
+    position:fixed;
+    width:100%;
+    left:0;right:0;top:0;bottom:0;
+    background-color: rgba(255,255,255,0.7);
+    z-index:9999;
+   
+}
+
+@-webkit-keyframes spin {
+	from {-webkit-transform:rotate(0deg);}
+	to {-webkit-transform:rotate(360deg);}
+}
+
+@keyframes spin {
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+
+#cover-spin::after {
+    content:'';
+    display:block;
+    position:absolute;
+    left:48%;top:40%;
+    width:40px;height:40px;
+    border-style:solid;
+    border-color:black;
+    border-top-color:transparent;
+    border-width: 4px;
+    border-radius:50%;
+    -webkit-animation: spin .8s linear infinite;
+    animation: spin .8s linear infinite;
+}
